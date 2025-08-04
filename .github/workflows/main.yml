@@ -18,7 +18,7 @@ jobs:
       - name: Print test - edge
         run: echo 'test- edge'
       - name: Print test-teams
-        run: echo'test-teams'
+        run: echo 'test-teams'
 
 
   deploy:
