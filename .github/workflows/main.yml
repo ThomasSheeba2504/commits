@@ -2,11 +2,12 @@ name: first workflow
 
 
 on: 
-  pull_request:
-    types: [opened, synchronize]
-    branches:
-      - main
-      - 'releases/**'
+  push:
+   branches:
+     - main
+  
+
+  
   
 
 jobs:
