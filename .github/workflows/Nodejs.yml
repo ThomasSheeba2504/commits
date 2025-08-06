@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: '22'
       - name: Print Node Version
-        run : java -version
+        run : node -version
 
 
   
