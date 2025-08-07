@@ -49,5 +49,6 @@ jobs:
       - name: Echo allowed pair
         run: |
           echo "Allowed pair: ${{ matrix.os }} - ${{ matrix.java }}"
+    
 
   
