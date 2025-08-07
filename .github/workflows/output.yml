@@ -14,7 +14,7 @@ jobs:
           echo "greeting=Hello Welcome" >> $GITHUB_OUTPUT
           echo "o1=not welcome" >> $GITHUB_OUTPUT
 
-dis-msg:
+  dis-msg:
     needs: gen-msg
     runs-on: ubuntu-latest
     steps:
