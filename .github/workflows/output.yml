@@ -14,9 +14,9 @@ jobs:
           echo "greeting=Hello Welcome" >> $GITHUB_OUTPUT
           echo "o1=not welcome" >> $GITHUB_OUTPUT
 
-#dis-msg:
-    #needs: gen-msg
-    #runs-on: ubuntu-latest
-    #steps:
-      #- run: echo '${{ needs.gen-msg.outputs.message }}'
+dis-msg:
+    needs: gen-msg
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo '${{ needs.gen-msg.outputs.message }}'
 
