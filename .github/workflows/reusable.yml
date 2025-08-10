@@ -1,10 +1,13 @@
-name: Call Resuable workflow
+name: Reusable workflow
 
 on:
-  push:
-    branches:
-      - main
+  workflow_call:
 
 jobs:
-  call-reusable:
-    uses: ./.github/workflows/reused.yml
+  build:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Checkout
+         uses: actions/checkout@v4.2.2
+       - name: Run Resuable Build Step
+         run: echo "This is a resuable workflow"
